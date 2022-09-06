@@ -4,7 +4,7 @@ import express from 'express';
 const routes = express.Router();
 
 routes.get('/', (req, res) => {
-    res.send('Funcionando');
+    res.json({ message: 'Funcionando' });
 });
 
 export default routes;
