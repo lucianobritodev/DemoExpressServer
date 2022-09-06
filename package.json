@@ -6,11 +6,15 @@
   "type": "module",
   "scripts": {
     "start": "node src/app/main.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon --experimental-modules --es-module-specifier-resolution=node src/app/main.js",
+    "test": ""
   },
   "author": "Luciano Brito",
   "license": "MIT",
   "dependencies": {
     "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
   }
 }
